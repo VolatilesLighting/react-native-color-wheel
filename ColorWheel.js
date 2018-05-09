@@ -79,7 +79,7 @@ export class ColorWheel extends Component {
     this.self.measureInWindow((x, y, width, height) => {
       const window = Dimensions.get('window')
       const absX = x % width
-      const radius = Math.min(width, height) / 2
+      const radius = Math.min(width, height) / 2.5
       const offset = {
         x: absX + width / 2,
         y: y % window.height + height / 2,
